@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Configures ufw to deny all incoming traffic except SSH, HTTP, and HTTPS.
+ufw default deny incoming
+ufw allow 22/tcp
+ufw allow 80/tcp
+ufw allow 443/tcp
+ufw --force enable
